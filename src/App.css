@@ -1,0 +1,41 @@
+.container {
+  font-family: 'Wendy One', sans-serif;
+  color: aliceblue;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  background: radial-gradient(ellipse at center, rgba(69, 72, 77, 1) 0%, rgba(34, 34, 34, 1) 100%);
+}
+.container .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 15px 3px rgba(0, 0, 0, 0.40), inset 0px 1px 15px 3px rgba(0, 0, 0, 0.40);
+  background-color: rgba(44, 44, 44, .2);
+}
+.container .input-group .svg-input {
+  position: relative;
+  width: 300px;
+  height: 35px;
+  margin-bottom: 20px;
+}
+.container .input-group .svg-input input {
+  color: aliceblue;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 5px 5px;
+  background-color: transparent;
+}
+.container .input-group .svg-input .svg-line {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  display: block;
+  overflow: visible;
+}
