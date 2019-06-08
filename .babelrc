@@ -1,0 +1,36 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env"
+    ],
+    "@babel/typescript",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread",
+    [
+      "module-resolver", {
+        "root": [
+          "./src",
+          "./static"
+        ]
+      }
+    ],
+    [
+      "react-css-modules", {
+        "filetypes": {
+          ".scss": {
+            "syntax": "postcss-scss",
+            "plugins": [
+              "postcss-nested",
+              "postcss-nesting"
+            ]
+          }
+        },
+        "generateScopedName": "[local]__[hash:base64:5]"
+      }
+    ],
+    "react-hot-loader/babel"
+  ]
+}
